@@ -1,101 +1,120 @@
+import MaxWidthWrapper from "@/components/global/MaxWidthWrapper";
+import { Button } from "@/components/ui/button";
+import { SocialIcon } from "react-social-icons";
 import Image from "next/image";
+import { ChevronsRightIcon, CircleCheckBig, Dice1, Phone } from "lucide-react";
+import Link from "next/link";
 
-export default function Home() {
+const Home = async () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <MaxWidthWrapper className="font-serif">
+      <div className="h-[70vh] my-10 bg-accent">
+        <div className="uppercase flex flex-col items-center justify-center w-full  h-full font-serif leading-[4rem] animate-slideinY opacity-0 [--slidein-delay:300ms] border-b border-primary">
+          <h1 className="text-2xl">Exporter, importer</h1>
+          <h1 className="text-2xl">& indentors of</h1>
+          <h1 className="text-4xl font-bold leading-[50px]">
+            {" "}
+            PHARMACEUTICALS
+          </h1>
+          <h1 className="text-3xl font-bold">
+            {" "}
+            RAW MATERIALS, DRUGS & CHEMICALS.
+          </h1>
+          <div className="flex justify-center items-center gap-x-5 mt-5 animate-slideinY opacity-0 [--slidein-delay:700ms]">
+            <Button className="text-xl">Brochure</Button>
+            <Link href={"/contact"}>
+              <Button
+                variant={"outline"}
+                className="group border-2 border-primary text-xl"
+              >
+                Contact Us{" "}
+                <ChevronsRightIcon className="group-hover:translate-x-2 duration-150" />
+              </Button>
+            </Link>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div className="p-4 flex items-center">
+        <div className="text-2xl animate-slideinX opacity-0 [--slidein-delay:500ms]">
+          Connect with us
+        </div>
+        <ul className="flex items-center gap-x-4 mx-5 animate-slideinX opacity-0 [--slidein-delay:900ms]">
+          <SocialIcon url={"https://x.com"} label="twitter" bgColor="#413f52" />
+          <SocialIcon url={"https://facebook.com"} bgColor="#413f52" />
+          <SocialIcon url={"https://instagram.com"} bgColor="#413f52" />
+          <SocialIcon url={"https://linkedin.com"} bgColor="#413f52" />
+        </ul>
+      </div>
+      <AboutContent />
+      <OurProducts />
+    </MaxWidthWrapper>
+  );
+};
+export default Home;
+
+const AboutContent = async (): Promise<JSX.Element> => {
+  return (
+    <div className="grid grid-cols-[60%_40%]">
+      <div>
+        <h1 className="text-3xl font-bold mt-10 border-t border-primary pt-5">
+          Who we are
+        </h1>
+        <p className="text-start font-thin text-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+          asperiores illum quibusdam nostrum consequuntur accusantium dicta
+          neque maiores tenetur velit totam magni quaerat, odit, necessitatibus
+          perspiciatis molestiae sit, debitis magnam? Officiis maxime ipsum
+          numquam sunt molestiae corrupti a harum ex, tenetur delectus quo.
+          Labore ducimus, beatae fugiat ad dignissimos harum ipsam omnis eius
+          explicabo! Dolorum labore facilis rerum cumque doloremque? Quas id
+          blanditiis esse perspiciatis minima nobis veritatis laudantium
+          similique sunt. Amet quia, exercitationem rem ex incidunt quibusdam
+          quis facere. Inventore suscipit voluptate odit laborum eos dolorem
+          similique rerum quis. Quod blanditiis eligendi eos, delectus in
+          impedit ipsa sapiente ab inventore ex laudantium nesciunt aliquid
+          tempore amet officiis quam. Facilis laudantium numquam vero molestiae
+          explicabo ipsum deserunt accusamus, itaque beatae. Ut, amet esse
+          placeat, facilis provident et eos molestiae autem voluptatibus ipsam
+          quis, assumenda inventore adipisci qui facere accusantium perferendis
+          corporis sunt odit tempore fugiat. Ab alias consectetur iure saepe.
+        </p>
+      </div>
+      <div className="flex flex-col mt-10">
+        <div className="bg-gradient-to-r from-transparent to-primary/40 p-4 lg:p-8 rounded-r-full mb-10 duration-200">
+          <h1 className="flex items-center space-x-5 text-lg lg:text-2xl font-medium">
+            <CircleCheckBig size={30} className="text-green-500" />{" "}
+            <span>15+ Countries</span>
+          </h1>
+          <p className="ml-10 text-sm lg:text-lg mt-2">
+            Products are made from sustainable materials, while waste is reduced
+            through manufacturing, reuse and recycle
+          </p>
+        </div>
+
+        <div className="bg-gradient-to-r from-transparent to-primary/40 p-4 lg:p-8 rounded-r-full mb-10 duration-200">
+          <h1 className="flex items-center space-x-5 text-lg lg:text-2xl font-medium">
+            <CircleCheckBig size={30} className="text-green-500" />{" "}
+            <span>150 + customers</span>
+          </h1>
+          <p className="ml-10 text-sm lg:text-lg mt-2">
+            We adapt the newest technology to manufacture products.
+          </p>
+        </div>
+
+        <div className="bg-gradient-to-r from-transparent to-primary/40 p-4 lg:p-8 rounded-r-full mb-10 duration-200">
+          <h1 className="flex items-center space-x-5 text-lg lg:text-2xl font-medium">
+            <CircleCheckBig size={30} className="text-green-500" />{" "}
+            <span>200 + DMF Product Sources</span>
+          </h1>
+          <p className="ml-10 text-sm lg:text-lg mt-2">
+            We follow the manufacturing production strategy in order to MTS, MTO
+          </p>
+        </div>
+      </div>
     </div>
   );
-}
+};
+
+const OurProducts = async (): Promise<JSX.Element> => {
+  return <div>ok</div>;
+};
