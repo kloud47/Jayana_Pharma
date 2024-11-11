@@ -3,6 +3,7 @@ import MaxWidthWrapper from "@/components/global/MaxWidthWrapper";
 import { Mail, Phone } from "lucide-react";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { SocialIcon } from "react-social-icons";
 
 type Props = {};
 
@@ -32,7 +33,7 @@ const page = (props: Props) => {
       <div className="grid grid-cols-2 h-full">
         <GetInTouch />
         <div className="bg-primary/90 h-full m-5 rounded-3xl p-5 flex items-center">
-          <div className="bg-white mt-2 w-full rounded-3xl p-4 shadow-lg animate-slideinY opacity-0 [--slidein-delay:500ms]">
+          <div className="bg-white mt-2 w-full rounded-3xl p-4 shadow-lg animate-slideinY opacity-0 [--slidein-delay:150ms]">
             <form onSubmit={handleSubmit(onSubmit)}>
               <input
                 {...register("Name", { required: true })}
@@ -84,7 +85,7 @@ const GetInTouch = (): JSX.Element => {
       <div className="text-primary/90 font-black font-serif animate-slideinX opacity-0 [--slidein-delay:300ms]">
         <h1 className="text-4xl">Get in</h1>
         <h1 className="text-6xl uppercase">Touch</h1>
-        <p>
+        <p className="font-thin text-xl">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, sunt
           officia! Quod quis ipsam dolor rem architecto alias asperiores
           dignissimos, iure, vitae quibusdam nobis necessitatibus non impedit
@@ -97,6 +98,29 @@ const GetInTouch = (): JSX.Element => {
           obcaecati nam tempore autem illum voluptas cupiditate debitis quam,
           numquam ipsa, quas dicta odit?
         </p>
+        <ul className="flex items-center gap-x-4 mt-2 animate-slideinX opacity-0 [--slidein-delay:900ms]">
+          <SocialIcon
+            url={"https://x.com"}
+            label="twitter"
+            bgColor="#413f52"
+            className="hover:scale-105 duration-150"
+          />
+          <SocialIcon
+            url={"https://facebook.com"}
+            bgColor="#413f52"
+            className="hover:scale-105 duration-150"
+          />
+          <SocialIcon
+            url={"https://instagram.com"}
+            bgColor="#413f52"
+            className="hover:scale-105 duration-150"
+          />
+          <SocialIcon
+            url={"https://linkedin.com"}
+            bgColor="#413f52"
+            className="hover:scale-105 duration-150"
+          />
+        </ul>
       </div>
       <ul className="absolute bottom-0 bg-accent border-2 border-primary rounded-xl p-4">
         <li className="flex mb-2 justify-start gap-x-2">
