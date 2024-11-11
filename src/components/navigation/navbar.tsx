@@ -4,9 +4,7 @@ import MaxWidthWrapper from "../global/MaxWidthWrapper";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-type Props = {};
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   const pathname = usePathname();
 
   return (

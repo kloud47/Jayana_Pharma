@@ -3,9 +3,7 @@ import Link from "next/link";
 import React from "react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <div className="bg-primary text-background p-5 mt-10 font-serif z-10">
       <MaxWidthWrapper>

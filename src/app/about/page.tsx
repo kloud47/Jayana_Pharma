@@ -3,13 +3,12 @@ import MaxWidthWrapper from "@/components/global/MaxWidthWrapper";
 import Lottie from "lottie-react";
 import React from "react";
 import Medi from "../../../public/medi.json";
-import beat from "../../../public/beat.json";
 import { Button } from "@/components/ui/button";
 import Beat from "@/components/global/Beat";
 
-type Props = {};
+// type Props = {};
 
-const page = (props: Props) => {
+const page = () => {
   return (
     <MaxWidthWrapper>
       <div className="grid grid-cols-2 h-[70vh] font-serif border-b border-primary">

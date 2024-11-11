@@ -1,7 +1,7 @@
 import MaxWidthWrapper from "@/components/global/MaxWidthWrapper";
 import { Button } from "@/components/ui/button";
 import { SocialIcon } from "react-social-icons";
-import Image from "next/image";
+// import Image from "next/image";
 import {
   ChevronsRightIcon,
   CircleCheckBig,
@@ -10,7 +10,7 @@ import {
   Phone,
 } from "lucide-react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import AboutContent from "@/components/global/about-content";
 import Beat from "@/components/global/Beat";
 

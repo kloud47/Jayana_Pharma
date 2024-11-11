@@ -5,15 +5,13 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { SocialIcon } from "react-social-icons";
 
-type Props = {};
-
 type FormFields = {
   Name: string;
   Email: string;
   Message: string;
 };
 
-const page = (props: Props) => {
+const page = () => {
   const { register, handleSubmit, formState, reset } = useForm<FormFields>();
   const words = [
     {
