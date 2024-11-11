@@ -2,7 +2,7 @@
 import MaxWidthWrapper from "@/components/global/MaxWidthWrapper";
 import { Mail, Phone } from "lucide-react";
 import React from "react";
-import { useForm } from "react-hook-form";
+import { useForm as UseForm } from "react-hook-form";
 import { SocialIcon } from "react-social-icons";
 
 type FormFields = {
@@ -12,7 +12,7 @@ type FormFields = {
 };
 
 const page = () => {
-  const { register, handleSubmit } = useForm<FormFields>();
+  const { register, handleSubmit } = UseForm<FormFields>();
   // const words = [
   //   {
   //     text: "Tech",
