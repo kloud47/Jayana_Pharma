@@ -50,7 +50,7 @@ const AboutContent = () => {
           corporis sunt odit tempore fugiat. Ab alias consectetur iure saepe.
         </p>
         <Button
-          className="mt-5 text-xl w-1/2 mx-auto"
+          className="mt-5 text-xl w-1/2 mx-auto shadow-lg"
           onClick={() => router.push("/about")}
         >
           Know More

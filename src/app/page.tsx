@@ -12,6 +12,7 @@ import {
 import Link from "next/link";
 import { motion } from "framer-motion";
 import AboutContent from "@/components/global/about-content";
+import Beat from "@/components/global/Beat";
 
 const Home = async () => {
   return (
@@ -29,7 +30,7 @@ const Home = async () => {
             RAW MATERIALS, DRUGS & CHEMICALS.
           </h1>
           <div className="flex justify-center items-center gap-x-5 mt-5 animate-slideinY opacity-0 [--slidein-delay:700ms]">
-            <Button className="text-xl">Brochure</Button>
+            <Button className="text-xl shadow-lg">Brochure</Button>
             <Link href={"/products"}>
               <Button
                 variant={"outline"}
@@ -81,6 +82,7 @@ const Home = async () => {
         </ul>
       </div>
       <AboutContent />
+      <Beat />
       <OurProducts />
       <ContactUs />
     </MaxWidthWrapper>
@@ -90,31 +92,54 @@ export default Home;
 
 const OurProducts = async (): Promise<JSX.Element> => {
   return (
-    <div className="flex flex-col bg-muted rounded-lg p-5 BGProd">
-      <h1 className="text-center text-3xl border-b border-primary">
+    <div className="flex flex-col bg-muted rounded-lg p-5 BGProd pb-10">
+      <h1 className="text-center text-3xl text-primary font-bold border-b border-primary z-10">
         Our Products
       </h1>
-      <div className="flex justify-center items-center m-5">
+      <div className="z-10 flex justify-center items-center mt-5 mb-10">
         <ul className="grid grid-cols-2 w-[50%] text-xl text-black">
-          <li className="text-center">Methyl Cobalamin</li>
-          <li className="text-center">Aspirin</li>
-          <li className="text-center">Benfothiamine</li>
-          <li className="text-center">Ambroxol</li>
-          <li className="text-center">Bronopol</li>
-          <li className="text-center">Mometasone Furoate</li>
-          <li className="text-center">Ofloxacin</li>
-          <li className="text-center">Paracetamol</li>
-          <li className="text-center">Cetrimide</li>
-          <li className="text-center">Caffeine Citrate</li>
+          <li className="text-center p-2 rounded-xl m-1 bg-primary/30">
+            Methyl Cobalamin
+          </li>
+          <li className="text-center p-2 rounded-xl m-1 bg-background/50 border border-primary">
+            Aspirin
+          </li>
+          <li className="text-center p-2 rounded-xl m-1 bg-background/50 border border-primary">
+            Benfothiamine
+          </li>
+          <li className="text-center p-2 rounded-xl m-1 bg-primary/30">
+            Ambroxol
+          </li>
+          <li className="text-center p-2 rounded-xl m-1 bg-primary/30">
+            Bronopol
+          </li>
+          <li className="text-center p-2 rounded-xl m-1 bg-background/50 border border-primary">
+            Mometasone Furoate
+          </li>
+          <li className="text-center p-2 rounded-xl m-1 bg-background/50 border border-primary">
+            Ofloxacin
+          </li>
+          <li className="text-center p-2 rounded-xl m-1 bg-primary/30">
+            Paracetamol
+          </li>
+          <li className="text-center p-2 rounded-xl m-1 bg-primary/30">
+            Cetrimide
+          </li>
+          <li className="text-center p-2 rounded-xl m-1 bg-background/50 border border-primary">
+            Caffeine Citrate
+          </li>
         </ul>
       </div>
+      <Button className="z-10 mx-auto w-[30%] text-2xl shadow-lg">
+        View All Products
+      </Button>
     </div>
   );
 };
 
 const ContactUs = async (): Promise<JSX.Element> => {
   return (
-    <div className="bg-muted mt-10 p-5 flex flex-col justify-center items-center">
+    <div className="bg-muted mt-10 p-5 flex flex-col justify-center items-center border-2 border-primary rounded-xl shadow-xl">
       <h1 className="text-4xl text-center border-b p-1 border-primary w-full">
         Waiting for your response!
       </h1>
@@ -125,7 +150,7 @@ const ContactUs = async (): Promise<JSX.Element> => {
         every interaction. For inquiries, product information, or partnership
         opportunities, please contact us:
       </p>
-      <Button className="w-1/2 text-2xl rounded-full">Visit our company</Button>
+      <Button className="w-[30%] text-2xl shadow-lg">Visit our company</Button>
     </div>
   );
 };
