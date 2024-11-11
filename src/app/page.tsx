@@ -2,13 +2,7 @@ import MaxWidthWrapper from "@/components/global/MaxWidthWrapper";
 import { Button } from "@/components/ui/button";
 import { SocialIcon } from "react-social-icons";
 // import Image from "next/image";
-import {
-  ChevronsRightIcon,
-  CircleCheckBig,
-  Dice1,
-  Mail,
-  Phone,
-} from "lucide-react";
+import { ChevronsRightIcon, Mail, Phone } from "lucide-react";
 import Link from "next/link";
 // import { motion } from "framer-motion";
 import AboutContent from "@/components/global/about-content";

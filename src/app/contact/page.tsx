@@ -12,17 +12,17 @@ type FormFields = {
 };
 
 const page = () => {
-  const { register, handleSubmit, formState, reset } = useForm<FormFields>();
-  const words = [
-    {
-      text: "Tech",
-      className: "text-6xl",
-    },
-    {
-      text: "Council",
-      className: "text-6xl",
-    },
-  ];
+  const { register, handleSubmit } = useForm<FormFields>();
+  // const words = [
+  //   {
+  //     text: "Tech",
+  //     className: "text-6xl",
+  //   },
+  //   {
+  //     text: "Council",
+  //     className: "text-6xl",
+  //   },
+  // ];
 
   const onSubmit = async () => {};
 
