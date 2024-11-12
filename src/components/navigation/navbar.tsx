@@ -8,7 +8,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="flex justify-between items-center h-20 bg-background w-full  z-20">
+    <div className="flex justify-between items-center h-20 bg-primary/10 w-full z-20">
       <MaxWidthWrapper className="flex justify-between items-center h-full w-full p-2">
         <Link
           href={"/"}

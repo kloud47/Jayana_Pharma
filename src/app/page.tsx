@@ -11,7 +11,7 @@ import Beat from "@/components/global/Beat";
 const Home = async () => {
   return (
     <MaxWidthWrapper className="font-serif">
-      <div className="h-[70vh] mt-10 bg-accent">
+      <div className="h-[70vh] mt-10 bg-muted">
         <div className="uppercase flex flex-col items-center justify-center w-full  h-full font-serif leading-[4rem] animate-slideinY opacity-0 [--slidein-delay:300ms] border-b border-primary">
           {/* <h1 className="text-2xl">Exporter, importer</h1>
           <h1 className="text-2xl">& indentors of</h1>
@@ -23,7 +23,7 @@ const Home = async () => {
             {" "}
             RAW MATERIALS, DRUGS & CHEMICALS.
           </h1> */}
-          <h1 className="uppercase text-8xl font-black flex flex-col TextGradient">
+          <h1 className="uppercase text-8xl font-black flex flex-col TextGradient font-sans text-center p-2">
             <span className="animate-slideinX [--slidein-delay:300ms] w-full">
               Jayana
             </span>

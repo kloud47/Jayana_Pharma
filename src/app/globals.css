@@ -64,4 +64,42 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  .BGMedi1 {
+    position: relative;
+    background-image: url("../../public/Medi2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .BGMedi1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgb(100, 99, 109, 0.7); */
+    background-color: rgb(100, 99, 109, 0.6);
+    z-index: 1;
+  }
+
+  .BGMedi2 {
+    position: relative;
+    background-image: url("../../public/Medi4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .BGMedi2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgb(100, 99, 109, 0.7); */
+    background-color: rgb(100, 99, 109, 0.6);
+    z-index: 1;
+  }
 }

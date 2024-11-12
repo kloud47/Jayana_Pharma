@@ -1,4 +1,4 @@
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Map, MapPin } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
@@ -30,9 +30,16 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div>ok</div>
           <div className="flex flex-col">
-            <h1 className="text-xl">Quick Links</h1>
+            <MapPin className="ml-20" size={40} />
+            <span className="mx-20 mt-5 font-thin font-sans">
+              {" "}
+              44, 'Faiz-E-Edroos', 4th Floor, 371/373, Narsi Natha Street,
+              Masjid Bunder, MUMBAI-400 009. INDIA
+            </span>
+          </div>
+          <div className="flex flex-col">
+            <h1 className="text-2xl">Quick Links</h1>
             <ul className="flex flex-col gap-y-2 my-5">
               <Link
                 className="border-b border-border/40 flex justify-between items-center hover:text-background group text-muted-foreground"

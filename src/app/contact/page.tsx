@@ -30,8 +30,8 @@ const page = () => {
     <MaxWidthWrapper className="h-[85vh]">
       <div className="grid grid-cols-2 h-full">
         <GetInTouch />
-        <div className="bg-primary/90 h-full m-5 rounded-3xl p-5 flex items-center">
-          <div className="bg-white mt-2 w-full rounded-3xl p-4 shadow-lg animate-slideinY opacity-0 [--slidein-delay:150ms]">
+        <div className="bg-primary/90 h-full m-5 rounded-3xl p-10 flex items-center">
+          <div className="bg-white mt-2 w-full rounded-3xl p-2 shadow-lg animate-slideinY opacity-0 [--slidein-delay:150ms]">
             <form onSubmit={handleSubmit(onSubmit)}>
               <input
                 {...register("Name", { required: true })}
