@@ -2,7 +2,7 @@ import MaxWidthWrapper from "@/components/global/MaxWidthWrapper";
 import { Button } from "@/components/ui/button";
 import { SocialIcon } from "react-social-icons";
 // import Image from "next/image";
-import { ChevronsRightIcon, Mail, Phone } from "lucide-react";
+import { ChevronsRightIcon, Mail, MailIcon, Phone } from "lucide-react";
 import Link from "next/link";
 // import { motion } from "framer-motion";
 import AboutContent from "@/components/global/about-content";
@@ -13,7 +13,7 @@ const Home = async () => {
     <MaxWidthWrapper className="font-serif">
       <div className="h-[70vh] mt-10 bg-accent">
         <div className="uppercase flex flex-col items-center justify-center w-full  h-full font-serif leading-[4rem] animate-slideinY opacity-0 [--slidein-delay:300ms] border-b border-primary">
-          <h1 className="text-2xl">Exporter, importer</h1>
+          {/* <h1 className="text-2xl">Exporter, importer</h1>
           <h1 className="text-2xl">& indentors of</h1>
           <h1 className="text-4xl font-bold leading-[50px]">
             {" "}
@@ -22,6 +22,12 @@ const Home = async () => {
           <h1 className="text-3xl font-bold">
             {" "}
             RAW MATERIALS, DRUGS & CHEMICALS.
+          </h1> */}
+          <h1 className="uppercase text-8xl font-black flex flex-col TextGradient">
+            <span className="animate-slideinX [--slidein-delay:300ms] w-full">
+              Jayana
+            </span>
+            <span>Pharma</span>
           </h1>
           <div className="flex justify-center items-center gap-x-5 mt-5 animate-slideinY opacity-0 [--slidein-delay:700ms]">
             <Button className="text-xl shadow-lg">Brochure</Button>
@@ -134,8 +140,9 @@ const OurProducts = async (): Promise<JSX.Element> => {
 const ContactUs = async (): Promise<JSX.Element> => {
   return (
     <div className="bg-muted mt-10 p-5 flex flex-col justify-center items-center border-2 border-primary rounded-xl shadow-xl">
-      <h1 className="text-4xl text-center border-b p-1 border-primary w-full">
+      <h1 className="text-4xl text-center border-b p-1 border-primary w-full flex justify-center items-center">
         Waiting for your response!
+        <MailIcon size={50} />
       </h1>
       <p className="px-20">
         At Jayana Pharma, we’re here to support and collaborate with our clients
