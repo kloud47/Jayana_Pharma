@@ -1,5 +1,5 @@
 import MaxWidthWrapper from "@/components/global/MaxWidthWrapper";
-import { CircleDot, GitCommitVertical, Pointer } from "lucide-react";
+import { CircleDot, GitCommitVertical } from "lucide-react";
 import React from "react";
 
 const page = () => {

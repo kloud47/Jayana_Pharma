@@ -5,7 +5,7 @@ import React from "react";
 import Medi from "../../../public/medi.json";
 import { Button } from "@/components/ui/button";
 import Beat from "@/components/global/Beat";
-import { Quote, QuoteIcon, TextQuote } from "lucide-react";
+import { Quote } from "lucide-react";
 
 const page = () => {
   return (
