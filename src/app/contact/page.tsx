@@ -27,7 +27,7 @@ const page = () => {
   const onSubmit = async () => {};
 
   return (
-    <MaxWidthWrapper className="h-[85vh]">
+    <MaxWidthWrapper className="h-[85vh] mb-20">
       <div className="grid grid-cols-2 h-full">
         <GetInTouch />
         <div className="bg-primary/90 h-full m-5 rounded-3xl p-10 flex items-center BGProd BoxShadow1">

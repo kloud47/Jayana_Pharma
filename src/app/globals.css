@@ -152,4 +152,14 @@
     background-color: rgb(100, 99, 109, 0.6);
     z-index: 1;
   }
+
+  .inner .slide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    z-index: 50;
+  }
 }

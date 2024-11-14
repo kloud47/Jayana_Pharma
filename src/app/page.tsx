@@ -7,85 +7,88 @@ import Link from "next/link";
 // import { motion } from "framer-motion";
 import AboutContent from "@/components/global/about-content";
 import Beat from "@/components/global/Beat";
+import Inner from "@/components/layout/Inner";
 
 const Home = async () => {
   return (
-    <MaxWidthWrapper className="font-serif">
-      <div className="h-[70vh] mt-10 BGProd3">
-        <div className="uppercase flex flex-col items-center justify-center w-full  h-full font-serif leading-[4rem] animate-slideinY opacity-0 [--slidein-delay:300ms] border-b border-primary">
-          {/* <h1 className="text-2xl">Exporter, importer</h1>
-          <h1 className="text-2xl">& indentors of</h1>
-          <h1 className="text-4xl font-bold leading-[50px]">
-            {" "}
-            PHARMACEUTICALS
-          </h1>
-          <h1 className="text-3xl font-bold">
-            {" "}
-            RAW MATERIALS, DRUGS & CHEMICALS.
-          </h1> */}
-          <h1 className="uppercase text-8xl font-black flex flex-col TextGradient font-sans text-center p-2">
-            <span className="animate-slideinX [--slidein-delay:300ms] w-full">
-              Jayana
-            </span>
-            <span>Pharma</span>
-          </h1>
-          <div className="flex justify-center items-center gap-x-5 mt-5 animate-slideinY opacity-0 [--slidein-delay:700ms]">
-            <Button className="text-xl shadow-lg">Brochure</Button>
-            <Link href={"/products"}>
-              <Button
-                variant={"ghost"}
-                className="group border-2 border-primary text-xl"
-              >
-                Products{" "}
-                <ChevronsRightIcon className="group-hover:translate-x-2 duration-150" />
-              </Button>
-            </Link>
+    <Inner>
+      <MaxWidthWrapper className="font-serif mb-10">
+        <div className="h-[70vh] mt-10 BGProd3">
+          <div className="uppercase flex flex-col items-center justify-center w-full  h-full font-serif leading-[4rem] animate-slideinY opacity-0 [--slidein-delay:300ms] border-b border-primary">
+            {/* <h1 className="text-2xl">Exporter, importer</h1>
+        <h1 className="text-2xl">& indentors of</h1>
+        <h1 className="text-4xl font-bold leading-[50px]">
+          {" "}
+          PHARMACEUTICALS
+        </h1>
+        <h1 className="text-3xl font-bold">
+          {" "}
+          RAW MATERIALS, DRUGS & CHEMICALS.
+        </h1> */}
+            <h1 className="uppercase text-8xl font-black flex flex-col TextGradient font-sans text-center p-2">
+              <span className="animate-slideinX [--slidein-delay:300ms] w-full">
+                Jayana
+              </span>
+              <span>Pharma</span>
+            </h1>
+            <div className="flex justify-center items-center gap-x-5 mt-5 animate-slideinY opacity-0 [--slidein-delay:700ms]">
+              <Button className="text-xl shadow-lg">Brochure</Button>
+              <Link href={"/products"}>
+                <Button
+                  variant={"ghost"}
+                  className="group border-2 border-primary text-xl"
+                >
+                  Products{" "}
+                  <ChevronsRightIcon className="group-hover:translate-x-2 duration-150" />
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="p-4 flex items-center justify-between">
-        <div className="flex items-center">
-          <div className="text-2xl animate-slideinX opacity-0 [--slidein-delay:500ms]">
-            Connect with us
+        <div className="p-4 flex items-center justify-between">
+          <div className="flex items-center">
+            <div className="text-2xl animate-slideinX opacity-0 [--slidein-delay:500ms]">
+              Connect with us
+            </div>
+            <ul className="flex items-center gap-x-4 mx-5 animate-slideinX opacity-0 [--slidein-delay:900ms]">
+              <SocialIcon
+                url={"https://x.com"}
+                label="twitter"
+                bgColor="#413f52"
+                className="hover:scale-105 duration-150"
+              />
+              <SocialIcon
+                url={"https://facebook.com"}
+                bgColor="#413f52"
+                className="hover:scale-105 duration-150"
+              />
+              <SocialIcon
+                url={"https://instagram.com"}
+                bgColor="#413f52"
+                className="hover:scale-105 duration-150"
+              />
+              <SocialIcon
+                url={"https://linkedin.com"}
+                bgColor="#413f52"
+                className="hover:scale-105 duration-150"
+              />
+            </ul>
           </div>
-          <ul className="flex items-center gap-x-4 mx-5 animate-slideinX opacity-0 [--slidein-delay:900ms]">
-            <SocialIcon
-              url={"https://x.com"}
-              label="twitter"
-              bgColor="#413f52"
-              className="hover:scale-105 duration-150"
-            />
-            <SocialIcon
-              url={"https://facebook.com"}
-              bgColor="#413f52"
-              className="hover:scale-105 duration-150"
-            />
-            <SocialIcon
-              url={"https://instagram.com"}
-              bgColor="#413f52"
-              className="hover:scale-105 duration-150"
-            />
-            <SocialIcon
-              url={"https://linkedin.com"}
-              bgColor="#413f52"
-              className="hover:scale-105 duration-150"
-            />
+          <ul className="bg-accent border-2 border-primary/70 rounded-xl p-4 animate-slideinY opacity-0 [--slidein-delay:700ms]">
+            <li className="flex mb-2 justify-start gap-x-2">
+              <Phone /> 98211 26463
+            </li>
+            <li className="flex justify-start gap-x-2">
+              <Mail /> jayanapharma@gmail.com
+            </li>
           </ul>
         </div>
-        <ul className="bg-accent border-2 border-primary/70 rounded-xl p-4 animate-slideinY opacity-0 [--slidein-delay:700ms]">
-          <li className="flex mb-2 justify-start gap-x-2">
-            <Phone /> 98211 26463
-          </li>
-          <li className="flex justify-start gap-x-2">
-            <Mail /> jayanapharma@gmail.com
-          </li>
-        </ul>
-      </div>
-      <AboutContent />
-      <Beat />
-      <OurProducts />
-      <ContactUs />
-    </MaxWidthWrapper>
+        <AboutContent />
+        <Beat />
+        <OurProducts />
+        <ContactUs />
+      </MaxWidthWrapper>
+    </Inner>
   );
 };
 export default Home;

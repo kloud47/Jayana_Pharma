@@ -5,7 +5,7 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Footer = () => {
   return (
-    <div className="bg-primary text-background pt-5 mt-10 font-serif z-10">
+    <div className="bg-primary text-background pt-5 font-serif z-10">
       <div className="w-full border-4 border-background"></div>
       <MaxWidthWrapper>
         <div className="grid grid-cols-3 mt-10">
