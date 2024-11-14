@@ -30,8 +30,8 @@ const page = () => {
     <MaxWidthWrapper className="h-[85vh]">
       <div className="grid grid-cols-2 h-full">
         <GetInTouch />
-        <div className="bg-primary/90 h-full m-5 rounded-3xl p-10 flex items-center">
-          <div className="bg-white mt-2 w-full rounded-3xl p-2 shadow-lg animate-slideinY opacity-0 [--slidein-delay:150ms]">
+        <div className="bg-primary/90 h-full m-5 rounded-3xl p-10 flex items-center BGProd BoxShadow1">
+          <div className="bg-white mt-2 w-full rounded-3xl p-2 shadow-xl animate-slideinY opacity-0 [--slidein-delay:150ms] z-10">
             <form onSubmit={handleSubmit(onSubmit)}>
               <input
                 {...register("Name", { required: true })}
@@ -83,19 +83,18 @@ const GetInTouch = (): JSX.Element => {
       <div className="text-primary/90 font-black font-serif animate-slideinX opacity-0 [--slidein-delay:300ms]">
         <h1 className="text-4xl">Get in</h1>
         <h1 className="text-6xl uppercase">Touch</h1>
-        <p className="font-thin text-xl">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, sunt
-          officia! Quod quis ipsam dolor rem architecto alias asperiores
-          dignissimos, iure, vitae quibusdam nobis necessitatibus non impedit
-          quidem dolorum. Tempora. Voluptatem vitae voluptates placeat ad
-          quibusdam voluptatum possimus accusamus reprehenderit asperiores!
-          Consequatur ex nihil impedit voluptatem repudiandae in molestias
-          nulla, voluptates maxime odio ipsa dolores qui voluptatibus quia.
-          Inventore, harum. Esse laboriosam fuga est porro eos vitae ex
-          inventore adipisci assumenda ipsam. Iure deleniti porro reiciendis
-          obcaecati nam tempore autem illum voluptas cupiditate debitis quam,
-          numquam ipsa, quas dicta odit?
+        <p className="font-thin text-xl border-b border-primary py-4">
+          We’re here to connect, support, and answer any questions you may have!
+          Whether you’re interested in learning more about our offerings, need
+          assistance, or have a specific inquiry, our team is ready to help.
+          Here’s how you can reach us:
         </p>
+        <div className="my-2 mb-4">
+          <h1 className="text-xl my-2">Information</h1>
+          <p className="font-sans font-medium">
+            Office Hours: Monday - Friday, 9:00 AM - 6:00 PM (Local Time)
+          </p>
+        </div>
         <ul className="flex items-center gap-x-4 mt-2 animate-slideinX opacity-0 [--slidein-delay:900ms]">
           <SocialIcon
             url={"https://x.com"}

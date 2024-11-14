@@ -4,6 +4,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
 import { useRef } from "react";
+import Image from "next/image";
+import MediProd from "../../../public/AboutProd.png";
 
 const AboutContent = () => {
   const router = useRouter();
@@ -25,29 +27,19 @@ const AboutContent = () => {
     <div className="grid grid-cols-[60%_40%] mb-10">
       <motion.div
         ref={targetRef}
-        className="border border-primary px-4 flex flex-col shadow-xl"
+        className="border border-primary px-4 flex flex-col shadow-2xl"
         style={{ translate, opacity }}
       >
         <h1 className="text-4xl font-bold mt-10 pt-5">Who we are</h1>
-        <p className="text-start font-thin text-lg mt-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-          asperiores illum quibusdam nostrum consequuntur accusantium dicta
-          neque maiores tenetur velit totam magni quaerat, odit, necessitatibus
-          perspiciatis molestiae sit, debitis magnam? Officiis maxime ipsum
-          numquam sunt molestiae corrupti a harum ex, tenetur delectus quo.
-          Labore ducimus, beatae fugiat ad dignissimos harum ipsam omnis eius
-          explicabo! Dolorum labore facilis rerum cumque doloremque? Quas id
-          blanditiis esse perspiciatis minima nobis veritatis laudantium
-          similique sunt. Amet quia, exercitationem rem ex incidunt quibusdam
-          quis facere. Inventore suscipit voluptate odit laborum eos dolorem
-          similique rerum quis. Quod blanditiis eligendi eos, delectus in
-          impedit ipsa sapiente ab inventore ex laudantium nesciunt aliquid
-          tempore amet officiis quam. Facilis laudantium numquam vero molestiae
-          explicabo ipsum deserunt accusamus, itaque beatae. Ut, amet esse
-          placeat, facilis provident et eos molestiae autem voluptatibus ipsam
-          quis, assumenda inventore adipisci qui facere accusantium perferendis
-          corporis sunt odit tempore fugiat. Ab alias consectetur iure saepe.
-        </p>
+        <div className="text-start font-thin text-lg mt-4">
+          Founded in 1973 in Mumbai, India, Jayana Pharma is a leading supplier
+          of pharmaceutical raw materials, including APIs, pellets, herbal
+          extracts, and excipients. Our decades of expertise support clients
+          ranging from small generic manufacturers to global pharmaceutical
+          companies, backed by a robust, efficient supply chain and trusted
+          industry relationships.
+        </div>
+        <div className="BGProd2 h-[45%] rounded-lg">.</div>
         <Button
           className="mt-5 text-xl w-1/2 mx-auto shadow-lg"
           onClick={() => router.push("/about")}

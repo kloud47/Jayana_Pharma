@@ -11,7 +11,7 @@ import Beat from "@/components/global/Beat";
 const Home = async () => {
   return (
     <MaxWidthWrapper className="font-serif">
-      <div className="h-[70vh] mt-10 bg-muted">
+      <div className="h-[70vh] mt-10 BGProd3">
         <div className="uppercase flex flex-col items-center justify-center w-full  h-full font-serif leading-[4rem] animate-slideinY opacity-0 [--slidein-delay:300ms] border-b border-primary">
           {/* <h1 className="text-2xl">Exporter, importer</h1>
           <h1 className="text-2xl">& indentors of</h1>
@@ -33,7 +33,7 @@ const Home = async () => {
             <Button className="text-xl shadow-lg">Brochure</Button>
             <Link href={"/products"}>
               <Button
-                variant={"outline"}
+                variant={"ghost"}
                 className="group border-2 border-primary text-xl"
               >
                 Products{" "}
@@ -144,7 +144,7 @@ const ContactUs = async (): Promise<JSX.Element> => {
         Waiting for your response!
         <MailIcon size={50} />
       </h1>
-      <p className="px-20">
+      <p className="px-20 m-5">
         At Jayana Pharma, we’re here to support and collaborate with our clients
         and partners. Driven by a commitment to quality, integrity, and strong
         ethical values, we prioritize exceptional service and responsiveness in

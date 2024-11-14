@@ -39,6 +39,15 @@
 }
 
 @layer utilities {
+  .BoxShadow1 {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+      rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+      rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+
   .BGProd {
     position: relative;
     background-image: url("../../public/Medicine\ BG.webp");
@@ -57,6 +66,47 @@
     /* background-color: rgb(100, 99, 109, 0.7); */
     background-color: rgb(230, 229, 234, 0.5);
     z-index: 1;
+  }
+
+  .BGProd2 {
+    position: relative;
+    background-image: url("../../public/Products.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .BGProd2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgb(100, 99, 109, 0.7); */
+    background-color: rgb(230, 229, 234, 0.3);
+    z-index: 1;
+  }
+
+  .BGProd3 {
+    position: relative;
+    background-image: url("../../public/FrontPageMedic.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+
+  .BGProd3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgb(100, 99, 109, 0.7); */
+    background-color: rgb(230, 229, 234, 0.3);
+    z-index: -1;
   }
 
   .TextGradient {
