@@ -4,8 +4,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
 import { useRef } from "react";
-import Image from "next/image";
-import MediProd from "../../../public/AboutProd.png";
+// import Image from "next/image";
+// import MediProd from "../../../public/AboutProd.png";
 
 const AboutContent = () => {
   const router = useRouter();
