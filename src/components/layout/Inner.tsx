@@ -1,15 +1,17 @@
 "use client";
 import { motion } from "framer-motion";
 import React from "react";
+import { Variants } from "framer-motion";
 
 const Inner = ({ children }: { children: React.ReactNode }) => {
-  type AnimationVariants = {
-    initial: Record<string, any>; // Define keys and values for 'initial'
-    enter: Record<string, any>; // Define keys and values for 'enter'
-    exit: Record<string, any>; // Define keys and values for 'exit'
+  type AnimationConfig = {
+    initial: keyof Variants;
+    animate: keyof Variants;
+    exit: keyof Variants;
+    variants: Variants;
   };
 
-  const anim = (variants: AnimationVariants) => {
+  const anim = (variants: Variants): AnimationConfig => {
     return {
       initial: "initial",
       animate: "enter",

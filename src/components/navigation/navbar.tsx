@@ -1,14 +1,33 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import MaxWidthWrapper from "../global/MaxWidthWrapper";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 
 const Navbar = () => {
+  const { scrollY } = useScroll();
   const pathname = usePathname();
+  const [hidden, setHidden] = useState(false);
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    if (latest > previous! && latest > 150) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
 
   return (
-    <div className="flex justify-between items-center h-20 bg-primary/10 w-full z-20">
+    <motion.div
+      variants={{
+        visible: { y: 0 },
+        hidden: { y: "-100%" },
+      }}
+      animate={hidden ? "hidden" : "visible"}
+      className="flex sticky top-0 justify-between items-center h-20 bg-[#E5E5E9] w-full z-20"
+    >
       <MaxWidthWrapper className="flex justify-between items-center h-full w-full p-2">
         <Link
           href={"/"}
@@ -59,7 +78,7 @@ const Navbar = () => {
           </Link>
         </nav>
       </MaxWidthWrapper>
-    </div>
+    </motion.div>
   );
 };
 
