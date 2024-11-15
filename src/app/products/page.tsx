@@ -161,8 +161,8 @@ const page = () => {
             </span>
           </div>
           <div className="border-b border-primary mb-5">
-            <h1 className="text-center text-4xl">Excipients</h1>
-            <div className="grid grid-cols-3 font-sans font-thin text-lg mt-5 bg-muted p-2">
+            <h1 className="text-center text-4xl font-bold">Excipients</h1>
+            <div className="grid grid-cols-3 text-lg mt-5 bg-muted p-2">
               <span className="flex">
                 <GitCommitVertical />
                 Aloe Vera
@@ -232,16 +232,16 @@ const page = () => {
             </div>
             <div className="flex justify-center gap-20 bg-muted pt-5 pb-2">
               <div>
-                <h1 className="text-2xl">Emulsifiers</h1>
-                <div className="flex flex-col font-sans font-thin text-lg mt-2">
+                <h1 className="text-2xl font-bold">Emulsifiers</h1>
+                <div className="flex flex-col text-lg mt-2">
                   <span>Carnauba Wax</span>
                   <span>Yellow Soft Paraffin</span>
                   <span>Hard Paraffin Wax</span>
                 </div>
               </div>
               <div>
-                <h1 className="text-2xl">Natural Oils</h1>
-                <div className="flex flex-col font-sans font-thin text-lg mt-2">
+                <h1 className="text-2xl font-bold">Natural Oils</h1>
+                <div className="flex flex-col text-lg mt-2">
                   <span>Eucalyptus Oil</span>
                   <span>Dill Oil</span>
                   <span>Carragenan Oil</span>
@@ -252,7 +252,7 @@ const page = () => {
             </div>
           </div>
           <div className="border-b border-primary my-20">
-            <h1 className="text-center text-4xl">Therapeutic Use</h1>
+            <h1 className="text-center text-4xl font-bold">Therapeutic Use</h1>
             <div className="grid grid-cols-3 pt-4">
               <div className="grid grid-cols-2 bg-muted border-b border-primary">
                 <div className="bg-primary/10 flex flex-col justify-center items-center text-lg">

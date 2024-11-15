@@ -26,7 +26,7 @@ const Navbar = () => {
         hidden: { y: "-100%" },
       }}
       animate={hidden ? "hidden" : "visible"}
-      className="flex sticky top-0 justify-between items-center h-20 bg-[#E5E5E9] w-full z-20"
+      className="flex sticky top-0 justify-between items-center h-20 bg-[#E5E5E9] w-full z-20 shadow-lg"
     >
       <MaxWidthWrapper className="flex justify-between items-center h-full w-full p-2">
         <Link

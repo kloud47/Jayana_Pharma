@@ -26,20 +26,18 @@ const Home = async () => {
           {" "}
           RAW MATERIALS, DRUGS & CHEMICALS.
         </h1> */}
-            <h1 className="uppercase text-8xl font-black flex flex-col TextGradient font-sans text-center p-2">
-              <span className="animate-slideinX [--slidein-delay:300ms] w-full">
-                Jayana
-              </span>
+            <h1 className="uppercase text-6xl lg:text-8xl font-black flex flex-col TextGradient font-sans text-center p-2">
+              <span className="w-full">Jayana</span>
               <span>Pharma</span>
             </h1>
             <div className="flex justify-center items-center gap-x-5 mt-5 animate-slideinY opacity-0 [--slidein-delay:700ms]">
-              <Button className="text-xl shadow-lg">Brochure</Button>
+              <Button className="text-xl shadow-xl">Brochure</Button>
               <Link href={"/products"}>
                 <Button
                   variant={"ghost"}
-                  className="group border-2 border-primary text-xl"
+                  className="group border-2 border-primary text-xl bg-muted/30"
                 >
-                  Products{" "}
+                  Products
                   <ChevronsRightIcon className="group-hover:translate-x-2 duration-150" />
                 </Button>
               </Link>
@@ -99,7 +97,7 @@ export default Home;
 const OurProducts = async (): Promise<JSX.Element> => {
   return (
     <div className="flex flex-col bg-muted rounded-lg p-5 BGProd pb-10">
-      <h1 className="text-center text-3xl text-primary font-bold border-b border-primary z-10">
+      <h1 className="text-center text-3xl text-primary font-medium pb-2 border-b border-primary z-10">
         Our Products
       </h1>
       <div className="z-10 flex justify-center items-center mt-5 mb-10">
@@ -137,7 +135,7 @@ const OurProducts = async (): Promise<JSX.Element> => {
         </ul>
       </div>
       <Button className="z-10 mx-auto w-[30%] text-2xl shadow-lg">
-        View All Products
+        <Link href={"/products"}>View All Products</Link>
       </Button>
     </div>
   );
@@ -146,18 +144,20 @@ const OurProducts = async (): Promise<JSX.Element> => {
 const ContactUs = async (): Promise<JSX.Element> => {
   return (
     <div className="bg-muted mt-10 p-5 flex flex-col justify-center items-center border-2 border-primary rounded-xl shadow-xl">
-      <h1 className="text-4xl text-center border-b p-1 border-primary w-full flex justify-center items-center">
+      <h1 className="text-4xl text-center border-b p-1 border-primary w-full flex justify-center items-center pb-2">
         Waiting for your response!
-        <MailIcon size={40} />
+        <MailIcon size={40} fill="#fff" />
       </h1>
-      <p className="px-20 m-5">
+      <p className="px-20 m-5 text-lg text-center">
         At Jayana Pharma, we’re here to support and collaborate with our clients
         and partners. Driven by a commitment to quality, integrity, and strong
         ethical values, we prioritize exceptional service and responsiveness in
         every interaction. For inquiries, product information, or partnership
         opportunities, please contact us:
       </p>
-      <Button className="w-[30%] text-2xl shadow-lg">Visit our company</Button>
+      <Button className="w-[30%] text-2xl shadow-lg">
+        <Link href={"/contact"}>Visit our company</Link>
+      </Button>
     </div>
   );
 };

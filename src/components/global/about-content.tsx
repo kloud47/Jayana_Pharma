@@ -39,7 +39,7 @@ const AboutContent = () => {
           companies, backed by a robust, efficient supply chain and trusted
           industry relationships.
         </div>
-        <div className="BGProd2 h-[45%] rounded-lg">.</div>
+        <div className="BGProd2 h-[45%] rounded-lg my-4">.</div>
         <Button
           className="mt-5 text-xl w-1/2 mx-auto shadow-lg"
           onClick={() => router.push("/about")}

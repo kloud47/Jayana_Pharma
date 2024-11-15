@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="rounded-xl border border-border/50 text-muted p-2 grid grid-cols-[20%_80%] font-sans my-2 bg-accent/5">
               <div>off.</div>
               <div>
-                <span className="mr-2">:</span> 2343 2311 / 6638 2516
+                <span className="mr-2">:</span> +91-22-2343 2311 / 6638 2516
               </div>
               <div>Fax</div>
               <div>
