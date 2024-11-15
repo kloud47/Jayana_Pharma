@@ -1,3 +1,4 @@
+import MaxWidthWrapper2 from "@/components/global/MaxWidthWrapper2";
 import MaxWidthWrapper from "@/components/global/MaxWidthWrapper";
 import { Button } from "@/components/ui/button";
 import { SocialIcon } from "react-social-icons";
@@ -12,8 +13,8 @@ import Inner from "@/components/layout/Inner";
 const Home = async () => {
   return (
     <Inner>
-      <MaxWidthWrapper className="font-serif mb-10">
-        <div className="h-[70vh] mt-10 BGProd3">
+      <MaxWidthWrapper2 className="font-serif">
+        <div className="h-[70vh] BGProd3">
           <div className="uppercase flex flex-col items-center justify-center w-full  h-full font-serif leading-[4rem] animate-slideinY opacity-0 [--slidein-delay:300ms] border-b border-primary">
             {/* <h1 className="text-2xl">Exporter, importer</h1>
         <h1 className="text-2xl">& indentors of</h1>
@@ -83,6 +84,8 @@ const Home = async () => {
             </li>
           </ul>
         </div>
+      </MaxWidthWrapper2>
+      <MaxWidthWrapper className="mb-10">
         <AboutContent />
         <Beat />
         <OurProducts />
@@ -145,7 +148,7 @@ const ContactUs = async (): Promise<JSX.Element> => {
     <div className="bg-muted mt-10 p-5 flex flex-col justify-center items-center border-2 border-primary rounded-xl shadow-xl">
       <h1 className="text-4xl text-center border-b p-1 border-primary w-full flex justify-center items-center">
         Waiting for your response!
-        <MailIcon size={50} />
+        <MailIcon size={40} />
       </h1>
       <p className="px-20 m-5">
         At Jayana Pharma, we’re here to support and collaborate with our clients
