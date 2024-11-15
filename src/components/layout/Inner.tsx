@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import React from "react";
 
 const Inner = ({ children }: { children: React.ReactNode }) => {
-  const anim = (variants: any) => {
+  const anim = (variants: typeof opacity | typeof slide) => {
     return {
       initial: "initial",
       animate: "enter",
