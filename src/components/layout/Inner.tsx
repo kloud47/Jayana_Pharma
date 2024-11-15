@@ -1,36 +1,28 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, Variants, MotionProps } from "framer-motion";
 import React from "react";
-import { Variants } from "framer-motion";
 
 const Inner = ({ children }: { children: React.ReactNode }) => {
-  type AnimationConfig = {
-    initial: keyof Variants;
-    animate: keyof Variants;
-    exit: keyof Variants;
-    variants: Variants;
-  };
+  const anim = (variants: Variants): MotionProps => ({
+    initial: "initial",
+    animate: "enter",
+    exit: "exit",
+    variants,
+  });
 
-  const anim = (variants: Variants): AnimationConfig => {
-    return {
-      initial: "initial",
-      animate: "enter",
-      exit: "exit",
-      variants,
-    };
-  };
-
-  const opacity = {
+  const opacity: Variants = {
     initial: {
       opacity: 0,
     },
     enter: {
       opacity: 1,
     },
-    exit: { opacity: 1 },
+    exit: {
+      opacity: 1,
+    },
   };
 
-  const slide = {
+  const slide: Variants = {
     initial: {
       top: "0vh",
     },
@@ -46,7 +38,7 @@ const Inner = ({ children }: { children: React.ReactNode }) => {
     },
   };
 
-  const perspective = {
+  const perspective: Variants = {
     initial: {
       y: 0,
       scale: 1,
