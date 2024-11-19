@@ -12,25 +12,25 @@ const page = () => {
   return (
     <Inner>
       <MaxWidthWrapper>
-        <div className="grid grid-cols-2 h-[70vh] font-serif border-b border-primary mt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 h-[70vh] font-serif border-b border-primary lg:mt-10">
           <div className="flex flex-col justify-center items-center font-serif bg-primary/20">
             <div className="animate-slideinY opacity-0 [--slidein-delay:300ms] flex flex-col justify-center items-center">
-              <h1 className="text-2xl">Exporter, importer</h1>
-              <h1 className="text-2xl">& indentors of</h1>
-              <h1 className="text-4xl font-bold leading-[50px]">
+              <h1 className="text-xl lg:text-2xl">Exporter, importer</h1>
+              <h1 className="text-xl lg:text-2xl">& indentors of</h1>
+              <h1 className="text-2xl lg:text-4xl font-bold leading-[50px]">
                 {" "}
                 PHARMACEUTICALS
               </h1>
-              <h1 className="text-2xl font-bold">
+              <h1 className="text-2xl font-bold text-center">
                 {" "}
                 RAW MATERIALS, DRUGS & CHEMICALS.
               </h1>
             </div>
-            <Button className="w-[40%] text-2xl mt-10 animate-slideinY opacity-0 [--slidein-delay:700ms]">
+            <Button className="text-2xl mt-10 animate-slideinY opacity-0 [--slidein-delay:700ms]">
               Book Appointment
             </Button>
           </div>
-          <div className="flex justify-center bg-primary/80">
+          <div className="lg:flex hidden md:hidden justify-center bg-primary/80">
             <Lottie
               loop={true}
               animationData={Medi}
@@ -40,7 +40,7 @@ const page = () => {
         </div>
         <div className="mt-20 grid grid-cols-[30%_70%]">
           <div className="BGMedi1"></div>
-          <div className="bg-muted p-5 text-lg font-thin font-serif flex flex-col relative border-t-2 border-primary">
+          <div className="bg-muted p-5 text-sm lg:text-lg font-thin font-serif flex flex-col relative border-t-2 border-primary">
             <div className="bg-primary rounded-full w-10 h-10 absolute top-0 left-0 -translate-x-5 -translate-y-5 z-10">
               .
             </div>
@@ -65,7 +65,7 @@ const page = () => {
             </span>
           </div>
           <div className="BGMedi2 mt-10"></div>
-          <div className="bg-muted p-5 text-lg font-thin font-serif flex flex-col mt-10 relative border-t-2 border-primary">
+          <div className="bg-muted p-5 text-sm lg:text-lg font-thin font-serif flex flex-col mt-10 relative border-t-2 border-primary">
             <div className="bg-primary rounded-full w-10 h-10 absolute top-0 left-0 -translate-x-5 -translate-y-5 z-10">
               .
             </div>

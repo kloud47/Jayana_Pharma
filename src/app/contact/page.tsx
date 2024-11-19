@@ -27,8 +27,8 @@ const page = () => {
   const onSubmit = async () => {};
 
   return (
-    <MaxWidthWrapper className="h-[85vh] mb-20">
-      <div className="grid grid-cols-2 h-full">
+    <MaxWidthWrapper className="lg:h-[85vh] mb-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 h-full">
         <GetInTouch />
         <div className="bg-primary/90 h-full m-5 rounded-3xl p-10 flex items-center BGProd BoxShadow1">
           <div className="bg-white mt-2 w-full rounded-3xl p-2 shadow-xl animate-slideinY opacity-0 [--slidein-delay:150ms] z-10">
@@ -80,10 +80,10 @@ const BottomGradient = () => {
 const GetInTouch = (): JSX.Element => {
   return (
     <div className="flex flex-col justify-center items-start relative">
-      <div className="text-primary/90 font-black font-serif animate-slideinX opacity-0 [--slidein-delay:300ms]">
-        <h1 className="text-4xl">Get in</h1>
-        <h1 className="text-6xl uppercase">Touch</h1>
-        <p className="font-thin text-xl border-b border-primary py-4">
+      <div className="text-primary/90 font-black font-serif animate-slideinX opacity-0 [--slidein-delay:300ms] p-5">
+        <h1 className="text-2xl lg:text-4xl">Get in</h1>
+        <h1 className="text-4xl lg:text-6xl uppercase">Touch</h1>
+        <p className="font-thin text-sm lg:text-xl border-b border-primary py-4">
           We’re here to connect, support, and answer any questions you may have!
           Whether you’re interested in learning more about our offerings, need
           assistance, or have a specific inquiry, our team is ready to help.
@@ -119,7 +119,7 @@ const GetInTouch = (): JSX.Element => {
           />
         </ul>
       </div>
-      <ul className="absolute bottom-0 bg-accent border-2 border-primary rounded-xl p-4">
+      <ul className="mt-4 lg:mt-10 bg-accent border-2 border-primary rounded-xl p-4">
         <li className="flex mb-2 justify-start gap-x-2">
           <Phone /> 98211 26463
         </li>

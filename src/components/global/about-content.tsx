@@ -24,14 +24,16 @@ const AboutContent = () => {
   const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <div className="grid grid-cols-[60%_40%] mb-10">
+    <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] mb-10">
       <motion.div
         ref={targetRef}
         className="border border-primary px-4 flex flex-col shadow-2xl"
         style={{ translate, opacity }}
       >
-        <h1 className="text-4xl font-bold mt-10 pt-5">Who we are</h1>
-        <div className="text-start font-thin text-lg mt-4">
+        <h1 className="text-xl lg:text-4xl font-bold mt-5 lg:mt-10 pt-5">
+          Who we are
+        </h1>
+        <div className="text-start font-thin text-sm lg:text-lg mt-4">
           Founded in 1973 in Mumbai, India, Jayana Pharma is a leading supplier
           of pharmaceutical raw materials, including APIs, pellets, herbal
           extracts, and excipients. Our decades of expertise support clients

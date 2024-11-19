@@ -8,10 +8,10 @@ const Footer = () => {
     <div className="bg-primary text-background pt-5 font-serif z-10">
       <div className="w-full border-4 border-background"></div>
       <MaxWidthWrapper>
-        <div className="grid grid-cols-3 mt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 mt-10">
           <div className="flex flex-col">
-            <h1 className="text-3xl">Reach Us</h1>
-            <div className="rounded-xl border border-border/50 text-muted p-2 grid grid-cols-[20%_80%] font-sans my-2 bg-accent/5">
+            <h1 className="text-2xl lg:text-3xl">Reach Us</h1>
+            <div className="rounded-xl border border-border/50 text-sm lg:text-lg text-muted p-2 grid grid-cols-[20%_80%] font-sans my-2 bg-accent/5">
               <div>off.</div>
               <div>
                 <span className="mr-2">:</span> +91-22-2343 2311 / 6638 2516
@@ -32,13 +32,13 @@ const Footer = () => {
           </div>
           <div className="flex flex-col">
             <MapPin className="ml-20" size={40} />
-            <span className="mx-20 mt-5 font-thin font-sans">
+            <span className="mx-5 lg:mx-20 mt-5 font-thin text-sm lg:text-lg font-sans">
               44, &apos;Faiz-E-Edroos&apos;, 4th Floor, 371/373, Narsi Natha
               Street, Masjid Bunder, MUMBAI-400 009. INDIA
             </span>
           </div>
-          <div className="flex flex-col">
-            <h1 className="text-2xl">Quick Links</h1>
+          <div className="flex flex-col mt-5 lg:mt-0">
+            <h1 className="text-xl lg:text-2xl">Quick Links</h1>
             <ul className="flex flex-col gap-y-2 my-5">
               <Link
                 className="border-b border-border/40 flex justify-between items-center hover:text-background group text-muted-foreground"
