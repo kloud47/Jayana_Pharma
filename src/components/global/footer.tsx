@@ -5,7 +5,7 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Footer = () => {
   return (
-    <div className="bg-primary text-background pt-5 font-serif z-10">
+    <div className="bg-muted-foreground text-background pt-5 font-serif z-10">
       <div className="w-full border-4 border-background"></div>
       <MaxWidthWrapper>
         <div className="grid grid-cols-1 lg:grid-cols-3 mt-10">
@@ -41,28 +41,28 @@ const Footer = () => {
             <h1 className="text-xl lg:text-2xl">Quick Links</h1>
             <ul className="flex flex-col gap-y-2 my-5">
               <Link
-                className="border-b border-border/40 flex justify-between items-center hover:text-background group text-muted-foreground"
+                className="border-b border-border/40 flex justify-between items-center hover:text-background group text-foreground"
                 href={"/"}
               >
                 Home
                 <ChevronRight className="group-hover:translate-x-1 duration-150" />
               </Link>
               <Link
-                className="border-b border-border/40 flex justify-between items-center hover:text-background group text-muted-foreground"
+                className="border-b border-border/40 flex justify-between items-center hover:text-background group text-foreground"
                 href={"/about"}
               >
                 About Us
                 <ChevronRight className="group-hover:translate-x-1 duration-150" />
               </Link>
               <Link
-                className="border-b border-border/40 flex justify-between items-center hover:text-background group text-muted-foreground"
+                className="border-b border-border/40 flex justify-between items-center hover:text-background group text-foreground"
                 href={"/products"}
               >
                 Our Products
                 <ChevronRight className="group-hover:translate-x-1 duration-150" />
               </Link>
               <Link
-                className="border-b border-border/40 flex justify-between items-center hover:text-background group text-muted-foreground"
+                className="border-b border-border/40 flex justify-between items-center hover:text-background group text-foreground"
                 href={"/contact"}
               >
                 Contact Us
@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
         <Link
           href={"/"}
-          className="uppercase text-3xl font-mono font-bold  text-primary/70"
+          className="uppercase text-3xl font-mono font-bold  text-primary/70 flex justify-center py-5"
         >
           Jayana Pharma
         </Link>

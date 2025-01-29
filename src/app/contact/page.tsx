@@ -51,7 +51,7 @@ const page = () => {
                 placeholder="Message..."
               />
               <button
-                className={`bg-gradient-to-br relative group/btn  bg-zinc-800 hover:text-black w-full hover:bg-[#3333] duration-200 text-white rounded-full h-10 font-medium shadow-[0px_5px_0px_0px_var(--zinc-800)_inset,0px_-5px_0px_0px_var(--zinc-800)_inset]`}
+                className={`bg-gradient-to-br relative group/btn  bg-popover hover:text-black w-full hover:bg-[#3333] duration-200 text-white rounded-full h-10 font-medium shadow-[0px_5px_0px_0px_var(--zinc-800)_inset,0px_-5px_0px_0px_var(--zinc-800)_inset]`}
                 type="submit"
                 // disabled={true}
               >
@@ -99,22 +99,22 @@ const GetInTouch = (): JSX.Element => {
           <SocialIcon
             url={"https://x.com"}
             label="twitter"
-            bgColor="#413f52"
+            bgColor="#279161"
             className="hover:scale-105 duration-150"
           />
           <SocialIcon
             url={"https://facebook.com"}
-            bgColor="#413f52"
+            bgColor="#279161"
             className="hover:scale-105 duration-150"
           />
           <SocialIcon
             url={"https://instagram.com"}
-            bgColor="#413f52"
+            bgColor="#279161"
             className="hover:scale-105 duration-150"
           />
           <SocialIcon
             url={"https://linkedin.com"}
-            bgColor="#413f52"
+            bgColor="#279161"
             className="hover:scale-105 duration-150"
           />
         </ul>

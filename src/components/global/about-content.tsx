@@ -122,6 +122,29 @@ const AboutContent = () => {
             We follow the manufacturing production strategy in order to MTS, MTO
           </p>
         </motion.div>
+        <motion.div
+          className="bg-gradient-to-r from-transparent to-primary/40 p-4 lg:p-8 rounded-r-full mb-10 duration-200"
+          initial={{
+            opacity: 0,
+            y: "20px",
+          }}
+          whileInView={{
+            opacity: 1,
+            y: "0px",
+          }}
+          transition={{
+            duration: 1,
+            delay: 1,
+          }}
+        >
+          <h1 className="flex items-center space-x-5 text-lg lg:text-2xl font-medium">
+            <CircleCheckBig size={30} className="text-green-500" />{" "}
+            <span>50+ Years</span>
+          </h1>
+          <p className="ml-10 text-sm lg:text-lg mt-2">
+            A Wealth of Knowledge & Trust Gained Over Five Decades
+          </p>
+        </motion.div>
       </div>
     </div>
   );

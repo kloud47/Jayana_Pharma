@@ -53,22 +53,22 @@ const Home = async () => {
               <SocialIcon
                 url={"https://x.com"}
                 label="twitter"
-                bgColor="#413f52"
+                bgColor="#279161"
                 className="hover:scale-105 duration-150"
               />
               <SocialIcon
                 url={"https://facebook.com"}
-                bgColor="#413f52"
+                bgColor="#279161"
                 className="hover:scale-105 duration-150"
               />
               <SocialIcon
                 url={"https://instagram.com"}
-                bgColor="#413f52"
+                bgColor="#279161"
                 className="hover:scale-105 duration-150"
               />
               <SocialIcon
                 url={"https://linkedin.com"}
-                bgColor="#413f52"
+                bgColor="#279161"
                 className="hover:scale-105 duration-150"
               />
             </ul>

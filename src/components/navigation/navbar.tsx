@@ -33,7 +33,7 @@ const Navbar = () => {
       <MaxWidthWrapper className="flex justify-between items-center h-full w-full lg:p-2 p-4">
         <Link
           href={"/"}
-          className="uppercase text-3xl font-mono font-bold  text-primary/70"
+          className="uppercase text-3xl font-mono font-bold text-popover"
         >
           Jayana Pharma
         </Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
             className={`${
               pathname === "/"
                 ? "border-b border-black"
-                : "hover:text-primary/50 duration-150 border-b border-transparent"
+                : "hover:text-popover/50 duration-150 border-b border-transparent"
             }`}
             href={"/"}
           >
@@ -52,7 +52,7 @@ const Navbar = () => {
             className={`${
               pathname === "/about"
                 ? "border-b border-black"
-                : "hover:text-primary/50 duration-150 border-b border-transparent"
+                : "hover:text-popover/50 duration-150 border-b border-transparent"
             }`}
             href={"/about"}
           >
@@ -62,7 +62,7 @@ const Navbar = () => {
             className={`${
               pathname === "/products"
                 ? "border-b border-black"
-                : "hover:text-primary/50 duration-150 border-b border-transparent"
+                : "hover:text-popover/50 duration-150 border-b border-transparent"
             }`}
             href={"/products"}
           >
@@ -72,7 +72,7 @@ const Navbar = () => {
             className={`${
               pathname === "/contact"
                 ? "border-b border-black"
-                : "hover:text-primary/50 duration-150 border-b border-transparent"
+                : "hover:text-popover/50 duration-150 border-b border-transparent"
             }`}
             href={"/contact"}
           >
