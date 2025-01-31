@@ -43,7 +43,7 @@ const AboutContent = () => {
         </div>
         <div className="BGProd2 h-[45%] rounded-lg my-4">.</div>
         <Button
-          className="mt-5 text-xl w-1/2 mx-auto shadow-lg"
+          className="mt-5 text-xl w-1/2 mx-auto shadow-lg bg-popover"
           onClick={() => router.push("/about")}
         >
           Know More

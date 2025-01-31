@@ -96,7 +96,7 @@ export default Home;
 
 const OurProducts = async (): Promise<JSX.Element> => {
   return (
-    <div className="flex flex-col bg-muted rounded-lg p-5 BGProd pb-10">
+    <div className="flex flex-col rounded-lg p-5 BGProd pb-10">
       <h1 className="text-center text-2xl lg:text-3xl text-primary font-medium pb-2 border-b border-primary z-10">
         Our Products
       </h1>

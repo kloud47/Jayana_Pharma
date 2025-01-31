@@ -26,7 +26,7 @@ const page = () => {
                 RAW MATERIALS, DRUGS & CHEMICALS.
               </h1>
             </div>
-            <Button className="text-2xl mt-10 animate-slideinY opacity-0 [--slidein-delay:700ms]">
+            <Button className="text-2xl mt-10 animate-slideinY opacity-0 [--slidein-delay:700ms] bg-popover">
               Book Appointment
             </Button>
           </div>

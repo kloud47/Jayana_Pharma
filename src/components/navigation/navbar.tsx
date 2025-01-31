@@ -6,6 +6,8 @@ import { usePathname } from "next/navigation";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "../ui/sheet";
 import { Menu } from "lucide-react";
+import Image from "next/image";
+import LOGO from "../../../public/Jayana Pharma Logo.jpg";
 
 const Navbar = () => {
   const { scrollY } = useScroll();
@@ -35,7 +37,13 @@ const Navbar = () => {
           href={"/"}
           className="uppercase text-3xl font-mono font-bold text-popover"
         >
-          Jayana Pharma
+          <Image
+            src={LOGO.src}
+            alt="LOGO"
+            width={100}
+            height={100}
+            className="object-contain"
+          />
         </Link>
         <nav className=" hidden lg:flex justify-between gap-x-5 uppercase">
           <Link
